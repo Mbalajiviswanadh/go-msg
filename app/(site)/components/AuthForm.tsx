@@ -110,9 +110,9 @@ export default function AuthForm() {
               : "Already have an account?"}
           </div>
 
-          <div onClick={toggleVariant} className="underline cursor-pointer">
+          {/* <div onClick={toggleVariant} className="underline cursor-pointer">
             {variant === "LOGIN" ? "Create an account" : "Login"}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
