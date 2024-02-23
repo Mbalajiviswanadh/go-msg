@@ -91,7 +91,7 @@ export default function AuthForm() {
             </div>
           </div>
 
-          {/* <div className="mt-6 flex gap-2">
+          <div className="mt-6 flex gap-2">
             <AuthSocialBUtton
               icon={BsGithub}
               onClick={() => socialAction("github")}
@@ -114,7 +114,7 @@ export default function AuthForm() {
             {variant === "LOGIN" ? "Create an account" : "Login"}
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
