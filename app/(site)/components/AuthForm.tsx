@@ -54,7 +54,13 @@ export default function AuthForm() {
       <div className="bg-white px-4 py-8 shadow sm:rounded-lg sm:px-10">
         <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
           {variant === "REGISTER" && (
-            <Input id="name" label="Name" register={register} errors={errors} />
+            <Input
+              id="name"
+              label="Name"
+              register={register}
+              errors={errors}
+              disable={isLoading}
+            />
           )}
           <Input
             id="email"
@@ -62,6 +68,7 @@ export default function AuthForm() {
             type="email"
             register={register}
             errors={errors}
+            disable={isLoading}
           />
 
           <Input
@@ -70,6 +77,7 @@ export default function AuthForm() {
             type="password"
             register={register}
             errors={errors}
+            disable={isLoading}
           />
           <div>
             <Button disabled={isLoading} fullWidth type="submit">
