@@ -30,8 +30,8 @@ model User{
   seenMessageIds String[] @db.ObjectId
   sendMessages Message[] @relation("Seen",fields: [seenMessageIds], references: [id])
 
-  accounts Accounts[] 
-  messages Messages[]
+  accounts Account[] 
+  messages Message[]
 }
 
 model Account{
